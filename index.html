@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Two Circle Tranagyph</title>
+	
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script src="jquery.ui.touch-punch.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+	  
+	<style>
+		span { position: relative; margin-top: 20px; margin-left: 270px;}
+		span * {display: inline}
+		.cyan { left: 0px }
+		.red  {	left: 0px }
+		.moving {position: absolute;}
+		#draggable {border: none}
+	</style>
+	<script>
+		/* touch punch: http://touchpunch.furf.com/ */
+		$(function() {
+		$( "#draggable" ).draggable({ 
+			axis: "x", 
+			distance: 3 
+			});
+		});
+	  </script>
+</head>
+<body>
+    <span>
+		<img class="cyan" src="cyan.png" />
+		<div id="draggable" class="ui-widget-content">
+	    	<img class="red moving" src="red.png" />
+		</div>
+	</span>	
+</body>
+</html>
+
